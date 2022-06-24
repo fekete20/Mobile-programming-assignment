@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="home"
+            type="uni.iit.assignment.domain.Summary" />
+    </data>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ui.home.HomeFragment">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/freeEmployees"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/freeEmployees"
+        android:textColorHint="@android:color/black"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_freeEmployees"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="@{@string/countValue(home.countEmployees - home.countCustomers)}"
+            android:textColor="@color/homeValueColor"
+            android:textColorHint="@android:color/black"
+            android:textSize="50dp"
+            tools:text="850 fő" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/countCustomers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/countCustomers"
+        android:textColorHint="@android:color/black"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/freeEmployees" >
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_countCustomers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="@{@string/countValue(home.countCustomers)}"
+            android:textColor="@color/homeValueColor"
+            android:textColorHint="@android:color/black"
+            android:textSize="50dp"
+            tools:text="850 fő" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/countEmployees"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/countEmployees"
+        android:textColorHint="@android:color/black"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/countCustomers">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_countEmployees"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="@{@string/countValue(home.countEmployees)}"
+            android:textColor="@color/homeValueColor"
+            android:textColorHint="@android:color/black"
+            android:textSize="50dp"
+            tools:text="850 fő" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/countEmployeesBudapest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/countEmployeesBudapest"
+        android:textColorHint="@android:color/black"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toBottomOf="@id/countEmployees">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_countEmployeesBudapest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="@{@string/countValue(home.countEmployeesBudapest)}"
+            android:textColor="@color/homeValueColor"
+            android:textColorHint="@android:color/black"
+            android:textSize="50dp"
+            tools:text="850 fő" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/countEmployeesMiskolc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/countEmployeesMiskolc"
+        android:textColorHint="@android:color/black"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toBottomOf="@id/countEmployeesBudapest">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_countEmployeesMiskolc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="@{@string/countValue(home.countEmployeesMiskolc)}"
+            android:textColor="@color/homeValueColor"
+            android:textColorHint="@android:color/black"
+            android:textSize="50dp"
+            tools:text="850 fő" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/totalSalary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/totalSalary"
+        android:textColorHint="@android:color/black"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/avgSalary">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_totalSalary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/homeValueColor"
+            android:enabled="false"
+            android:text="@{@string/salaryValue(home.totalSalary)}"
+            tools:text="8 000 000 HUF"
+            android:textColorHint="@android:color/black"
+            android:textSize="50dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/avgSalary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@android:color/black"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toBottomOf="@id/avgSalaryMiskolc">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_avgSalary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:hint="@string/avgSalary"
+            android:text="@{@string/salaryValue(home.avgSalary)}"
+            android:textColor="@color/homeValueColor"
+            android:textColorHint="@android:color/black"
+            android:textSize="50dp"
+            tools:text="8 000 000 HUF" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/avgSalaryBudapest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/avgSalaryBudapest"
+        android:textColorHint="@android:color/black"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toBottomOf="@id/countEmployeesMiskolc">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_avgSalaryBudapest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="@{@string/salaryValue(home.avgSalaryBudapest)}"
+            android:textColor="@color/homeValueColor"
+            android:textColorHint="@android:color/black"
+            android:textSize="50dp"
+            tools:text="8 000 000 HUF" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/avgSalaryMiskolc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/avgSalaryMiskolc"
+        android:textColorHint="@android:color/black"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toBottomOf="@id/avgSalaryBudapest">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_avgSalaryMiskolc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:hint="@string/avgSalary"
+            android:text="@{@string/salaryValue(home.avgSalaryMiskolc)}"
+            android:textColor="@color/homeValueColor"
+            android:textColorHint="@android:color/black"
+            android:textSize="50dp"
+            tools:text="8 000 000 HUF" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+</layout>

@@ -1,0 +1,51 @@
+<resources>
+    <string name="title_activity_main">Assignment app</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Neptun ID: B5T3ZN</string>
+    <string name="nav_header_subtitle">fekete20@iit.uni-miskolc.hu</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Összesítés</string>
+    <string name="menu_employee">Dolgozók</string>
+    <string name="menu_customer">Ügyfelek</string>
+
+
+    <string name="totalSalary">Összes fizetés</string>
+    <string name="salaryValue">%.0f HUF</string>
+    <string name="avgSalary">Átlagfizetés</string>
+    <string name="avgSalaryBudapest">Átlagfizetés Budapesten</string>
+    <string name="avgSalaryMiskolc">Átlagfizetés Miskolcon</string>
+    <string name="countEmployees">Dolgozók száma</string>
+    <string name="countEmployeesBudapest">Dolgozók száma Budapesten</string>
+    <string name="countEmployeesMiskolc">Dolgozók száma Miskolcon</string>
+    <string name="freeEmployees">Szabad dolgozók száma</string>
+    <string name="countCustomers">Ügyfelek száma</string>
+    <string name="countValue">%d fő</string>
+
+
+    <string name="employee_name">Név</string>
+    <string name="employee_position">Beosztás</string>
+    <string name="employee_location">Telephely</string>
+    <string name="employee_salary">Fizetés</string>
+
+    <string name="customer_name">Név</string>
+    <string name="customer_location">Cím</string>
+    <string name="customer_comment">Komment</string>
+
+    <string name="save_button">Mentés</string>
+
+    <string name="saveTitle">Megerősítés</string>
+    <string name="saveMessage">Biztosan elmenti?</string>
+    <string name="yesButton">Igen</string>
+    <string name="noButton">Nem</string>
+
+    <string name="errorTitle">Hiba!</string>
+    <string name="errorMessage">Sikertelen mentés.</string>
+    <string name="addEmployeeTitle">Új dolgozó hozzáadása</string>
+    <string name="addCustomerTitle">Új ügyfél hozzáadása</string>
+    <string name="editEmployeeTitle">Dolgozó módosítása</string>
+    <string name="editCustomerTitle">Ügyfél módosítása</string>
+
+</resources>

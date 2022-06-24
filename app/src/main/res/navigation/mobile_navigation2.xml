@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation2"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="uni.iit.assignment.fragment.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_employee"
+        android:name="uni.iit.assignment.fragment.ui.employee.EmployeeFragment"
+        android:label="@string/menu_employee"
+        tools:layout="@layout/fragment_employee" >
+        <action
+            android:id="@+id/action_nav_employee_to_addEmployeeFragment"
+            app:destination="@id/addEmployeeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_customer"
+        android:name="uni.iit.assignment.fragment.ui.customer.CustomerFragment"
+        android:label="@string/menu_customer"
+        tools:layout="@layout/fragment_customer" >
+        <action
+            android:id="@+id/action_nav_customer_to_addCustomerFragment"
+            app:destination="@id/addCustomerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addEmployeeFragment"
+        android:name="uni.iit.assignment.fragment.ui.employee.AddEmployeeFragment"
+        android:label="@string/addEmployeeTitle"
+        tools:layout="@layout/fragment_add_employee" />
+
+    <fragment
+        android:id="@+id/addCustomerFragment"
+        android:name="uni.iit.assignment.fragment.ui.customer.AddCustomerFragment"
+        android:label="@string/addCustomerTitle"
+        tools:layout="@layout/fragment_add_customer"
+        />
+
+
+</navigation>

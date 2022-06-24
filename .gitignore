@@ -21,3 +21,26 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+*.iml
+.gradle
+.idea
+/app/build
+/core/build
+/framework/build
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+.idea/codeStyles/codeStyleConfig.xml
+.idea/codeStyles/Project.xml
+framework/build.gradle
+gradle/wrapper/gradle-wrapper.properties
